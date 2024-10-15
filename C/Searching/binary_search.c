@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main() {
 	int i, n, target, count=0, mid, low, high;
 	
@@ -18,11 +17,9 @@ int main() {
 	
 	low=0;
 	high=n-1;
+	mid=(low+high)/2;
 	
 	while(low<=high) {
-		
-		mid=(low+high)/2;
-		
 		if(a[mid] == target) {
 			printf("Element found at position %d", mid+1);
 			count++;
